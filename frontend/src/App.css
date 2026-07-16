@@ -1,0 +1,274 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+/* ===========================
+        LANDING PAGE
+=========================== */
+
+.landingPageContainer{
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+}
+
+nav{
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 80px;
+}
+
+.navHeader h2{
+    font-size:32px;
+    font-weight:700;
+}
+
+.navlist{
+    display:flex;
+    gap:35px;
+    align-items:center;
+}
+
+.navlist p{
+    cursor:pointer;
+    transition:.3s;
+}
+
+.navlist p:hover{
+    color:#60a5fa;
+}
+
+.navlist div{
+    background:#3b82f6;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.navlist div:hover{
+    background:#2563eb;
+}
+
+.navlist div p{
+    color:white;
+    font-weight:600;
+}
+
+.landingMainContainer{
+    width:100%;
+    height:calc(100vh - 80px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 80px;
+}
+
+.landingMainContainer>div{
+    width:50%;
+}
+
+.landingMainContainer h1{
+    font-size:65px;
+    line-height:75px;
+    margin-bottom:20px;
+}
+
+.landingMainContainer span{
+    color:#38bdf8;
+}
+
+.landingMainContainer p{
+    font-size:20px;
+    margin-bottom:40px;
+    color:#d1d5db;
+}
+
+.landingMainContainer a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:15px 35px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.landingMainContainer a:hover{
+    background:#1d4ed8;
+}
+
+.landingMainContainer img{
+    width:90%;
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* ===========================
+        HOME PAGE
+=========================== */
+
+.navBar{
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    background:white;
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.navBar h2{
+    color:#2563eb;
+    font-size:30px;
+    font-weight:700;
+}
+
+.navBar p{
+    margin-right:15px;
+    font-weight:500;
+}
+
+.meetContainer{
+    height:calc(100vh - 80px);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 80px;
+    background:linear-gradient(135deg,#eef5ff,#dbeafe);
+}
+
+.leftPanel{
+    width:50%;
+}
+
+.leftPanel h2{
+    font-size:55px;
+    line-height:70px;
+    color:#0f172a;
+    margin-bottom:40px;
+}
+
+.leftPanel .MuiTextField-root{
+    width:350px;
+    background:white;
+    border-radius:10px;
+}
+
+.leftPanel button{
+    height:56px;
+    width:130px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:10px;
+}
+
+.rightPanel{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.rightPanel img{
+    width:100%;
+    max-width:600px;
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+nav{
+    padding:20px;
+}
+
+.landingMainContainer{
+
+    flex-direction:column;
+    text-align:center;
+    padding:30px;
+}
+
+.landingMainContainer>div{
+
+    width:100%;
+}
+
+.landingMainContainer h1{
+
+    font-size:42px;
+    line-height:50px;
+}
+
+.meetContainer{
+
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+
+.leftPanel{
+
+    width:100%;
+}
+
+.rightPanel{
+
+    width:100%;
+    margin-top:40px;
+}
+
+}
+
+
+
+
+.historyContainer{
+    min-height:100vh;
+    background:#eef5ff;
+    padding:40px;
+}
+
+.historyTitle{
+    font-size:40px;
+    font-weight:700;
+    color:#1e3a8a;
+    margin-bottom:30px;
+}
+
+.historyCard{
+    margin-bottom:20px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
